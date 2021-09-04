@@ -1,0 +1,22 @@
+body{
+
+  width:97%;
+  margin:1%;
+  overflow:auto;
+  margin-right:2%;
+
+}
+nav{
+
+  align-content: right;
+}
+
+
+#nav>li{
+
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+list-style-type: none;
+display: inline;
+margin-right :2em;
+
+}
