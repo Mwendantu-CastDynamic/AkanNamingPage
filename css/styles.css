@@ -23,7 +23,7 @@ nav{
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 list-style-type: none;
 display: inline;
-margin: 3em;
+margin: 1.5em;
 
 }
 
@@ -34,6 +34,14 @@ width: 100%;
 
 }
 
+#fPImage{
+
+  width:97%;
+  height:500px;
+
+}
+
+
 .col1-3, .col2-3, .col3-3{
   
   float:left;
@@ -42,45 +50,40 @@ width: 100%;
 }
 
 .col1-3{
+
 background-image: url();
 width: 20%;
-
+height:400px;
 }
  
 .col2-3{
 
-  width: 50%;
-  
+  width:40%;
+  height:400px;
+  margin:2px
 
 }
 
 .col3-3{
   background-image:url();
   width: 20%;
-  
+  height:400px;
 }
 
-#akanAppSection{
-
-  background-image: url();
-
-
-}
 
 #akanForm{
 
-  width:96%
+  margin: none;
 
 }
-#akan{
 
-  width:40%;
-  
+#submit{
+
+  float:right;
 }
 
-#fPImage{
+#imageSubmit{
 
-  width:97%;
-  height:500px;
+background-image:url()
 
 }

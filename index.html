@@ -14,8 +14,9 @@
     <ul id="nav">
       <li><a href="#introSection"></a>INTRODUCTION</li>
       <li><a href="#backgroundSection"></a>BACKGROUND</li>
-      <li><a href="#akanAppSection"></a>THE AKAN-APP</li>
-      <li><a href="#culturalExplorationSection"></a>EXPLORE-HERITAGE</li>
+      <li><a href="#historicalContext"></a>HISTORICAL CONTEXT</li>
+      <li><a href="#akanAppSection"></a>THE AKAN APP</li>
+      <li><a href="#culturalExplorationSection"></a>EXPLORE HERITAGE</li>
       <li><a href="#contactSection"></a>CONTACT</li>
     </ul>
   </nav>
@@ -25,7 +26,7 @@
   <div id=main>
 
   <div id="featurePiece">
-    <img id="fPImage" src="images/unroll.jpg" alt="">
+    <img id="fPImage" src="images/unroll.jpg" alt="a rolled out kente fabric.">
   </div>
 
   <div id="introSection">
@@ -37,9 +38,7 @@
   </div>
 
   <div id="backgroundSection">
-    <div id="history">
-
-    </div>
+   
     <div id="culture">
 
     </div>
@@ -47,6 +46,13 @@
 
     </div>
   </div>
+
+  <div id="historicalContext">
+    <div id="history">
+
+    </div>
+  </div>
+  
     <div id="akanAppSection">
       <div class="col1-3">
         <img src="" alt="">
@@ -55,6 +61,25 @@
         <form id="akan" action="">
         <fieldset>
           <legend>AKAN NAMING</legend>
+          <p>To determine a person's traditional Akan name, simply fill in
+             the information as specified in the relevant fields below and 
+             click on the <strong>Generate Akan</strong> button to determine 
+             the corresponding Akan Name result.</p>
+          <p>
+          <label for="username">Indicate Your Name:</label>  
+          <input type="text" name="username">
+          </p>
+          <p>
+          <label for="username">Select Your Date of Birth</label>
+          <input type="date" name="birthday">
+          </p>
+          <p>
+          <label for="username">Select Your Gender</label>
+          <input type="radio" name="gender" value="female" checked="checked"><strong>Female</strong>
+          <input type="radio" name="gender" value= "male"><strong>Male</strong></p>
+          <p id="submit">
+          <input id="imageSubmit" type="submit" src="images/" width="300" height="60" value="GENERATE AKAN NAME">
+        </p>   
         </fieldset>  
         </form>
       </div>
