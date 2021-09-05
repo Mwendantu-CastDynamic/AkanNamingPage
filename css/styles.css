@@ -1,14 +1,20 @@
+
 body{
 
-  width:97%;
-  margin:1%;
-  overflow:auto;
-  margin-right:2%;
+  width: 96%;
+  margin-left: 3%;
+  margin-right: 1%;
 
 }
+#main{
+
+  height: 100%
+}
+
 nav{
 
-  align-content: right;
+ align-content: right; 
+
 }
 
 
@@ -17,6 +23,37 @@ nav{
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 list-style-type: none;
 display: inline;
-margin-right :2em;
+margin: 3em;
 
+}
+
+div{
+
+overflow : auto;
+width:100%;
+
+}
+
+
+#akanAppSection{
+
+  background-image: url();
+
+
+}
+#akanForm{
+
+  width:96%
+
+}
+#akan{
+
+  width:40%;
+  
+}
+
+#fPImage{
+
+  width:97%;
+  height:1%;
 }
