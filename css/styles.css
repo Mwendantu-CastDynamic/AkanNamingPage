@@ -30,10 +30,35 @@ margin: 3em;
 div{
 
 overflow : auto;
-width:100%;
+width: 100%;
 
 }
 
+.col1-3, .col2-3, .col3-3{
+  
+  float:left;
+  margin: 5px;
+
+}
+
+.col1-3{
+background-image: url();
+width: 20%;
+
+}
+ 
+.col2-3{
+
+  width: 50%;
+  
+
+}
+
+.col3-3{
+  background-image:url();
+  width: 20%;
+  
+}
 
 #akanAppSection{
 
@@ -41,6 +66,7 @@ width:100%;
 
 
 }
+
 #akanForm{
 
   width:96%
@@ -55,5 +81,6 @@ width:100%;
 #fPImage{
 
   width:97%;
-  height:1%;
+  height:500px;
+
 }
