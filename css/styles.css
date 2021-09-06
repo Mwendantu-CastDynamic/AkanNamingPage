@@ -35,10 +35,11 @@ width: 100%;
 }
 
 #fPImage{
-
+  
+  background-image: url();
   width:97%;
   height:500px;
-
+   
 }
 
 
@@ -83,11 +84,6 @@ height:600px;
 
 }
 
-#gender{
-
-  
-
-}
 
 
 #btnSubmit{
