@@ -11,10 +11,11 @@ body{
   height: 100%
 }
 
-nav{
+#links{
 
- align-content: right; 
-
+float: right; 
+margin-left: 1%;
+margin-right: 5%;
 }
 
 
@@ -36,7 +37,6 @@ width: 100%;
 
 #fPImage{
   
-  background-image: url();
   width:97%;
   height:500px;
    
@@ -52,7 +52,7 @@ width: 100%;
 
 .col1-3{
 
-background-image: url();
+
 width: 20%;
 height:600px;
 }
