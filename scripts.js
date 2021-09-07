@@ -17,9 +17,9 @@ let akanForm = document.getElementById('akan-form')
 
 let dayOfTheWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
-const femaleNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
+let femaleNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
 
-const maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
+let maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
 
 
 // Declare and initialize variables to be used to retrieve the form element 
@@ -106,9 +106,9 @@ const maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
   // to be used to compute the day of the week
 
   
-  var dayOfTheWeek = parseInt(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) %7
+  var dayOfTheWeekIndex = parseInt(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) %7
   )
-console.log(dayOfTheWeek); //for the birthday 10/03/83 the day of the week is Thursday
+console.log(dayOfTheWeekIndex); //for the birthday 10/03/83 the day of the week is Thursday
 
 
 // Business Logic
@@ -117,38 +117,96 @@ console.log(dayOfTheWeek); //for the birthday 10/03/83 the day of the week is Th
 // Therefore if the index position of my dayOfTheWeek is 5 it then follows 
 // that my AKAN days of the week index 0 should begin on Saturday. 
 
-// Re-arranging our dayOfTheWeek order:
+// Re-arranging our dayOfTheWeek order and corresponding maleNames and femaleNames order:
 
-dayOfTheWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  
+dayOfTheWeek = ['Saturday','Sunday','Monday','Tuesday','Wednesday','Thursday','Friday'];
+ 
+let femaleNames = ['Ama','Akosua','Adwoa','Abenaa','Akua','Yaa','Afua'];
+
+let maleNames = ['Kwame','Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi',];
+
 
 alert(defaultGender);
 
-function getGenderSelected(){
-  if(defaultGender == )
-}
+function getAkanNames(){
+  if(defaultGender == "female") {
+
+    if (dayOfTheWeek =dayOfTheWeek[0]) {
+      alert( "The Akan name for "+ usersName ,"is " + femaleNames[0])
+  }
+
+  else if (dayOfTheWeek =dayOfTheWeek[1]) {
+    alert( "The Akan name for "+ usersName ,"is " + femaleNames[1])
+
+  }
+  else if (dayOfTheWeek =dayOfTheWeek[2]) {
+    alert( "The Akan name for "+ usersName ,"is " + femaleNames[2])
 
 
+  }
+  else if (dayOfTheWeek =dayOfTheWeek[3]) {
+    alert( "The Akan name for "+ usersName ,"is " + femaleNames[3])
 
-// Application Logic
+
+  }
+  else if (dayOfTheWeek =dayOfTheWeek[4]) {
+    alert( "The Akan name for "+ usersName ,"is " + femaleNames[4])
 
 
-function getFemaleAkanNames(){
-  
-}
+  }
+  else if (dayOfTheWeek =dayOfTheWeek[5]) {
+    alert( "The Akan name for "+ usersName ,"is " + femaleNames[5])
 
-function getFemaleAkanNames(){
-}
 
+  }
+  else if (dayOfTheWeek =dayOfTheWeek[6]) {
+    alert( "The Akan name for "+ usersName ,"is " + femaleNames[6])
+
+
+  }
+
+}    
+
+  if (defaultGender != "female") {
+      
+    if (dayOfTheWeek =dayOfTheWeek[0]) {
+      alert( "The Akan name for "+ usersName ,"is " + maleNames[0])
+
+      }
+
+      else if (dayOfTheWeek =dayOfTheWeek[1]) {
+        alert( "The Akan name for "+ usersName ,"is " + maleNames[1])
+
+      }
+      else if (dayOfTheWeek =dayOfTheWeek[2]) {
+        alert( "The Akan name for "+ usersName ,"is " + maleNames[2])
+
+      }
+      else if (dayOfTheWeek =dayOfTheWeek[3]) {
+        alert( "The Akan name for "+ usersName ,"is " + maleNames[3])
+
+      }
+      else if (dayOfTheWeek =dayOfTheWeek[4]) {
+        alert( "The Akan name for "+ usersName ,"is " + maleNames[4])
+
+      }
+      else if (dayOfTheWeek =dayOfTheWeek[5]) {
+        alert( "The Akan name for "+ usersName ,"is " + maleNames[5])
+
+      }
+      else if (dayOfTheWeek =dayOfTheWeek[6]) {
+        alert( "The Akan name for "+ usersName ,"is " + maleNames[6])
+
+      }
 
  
-
-function getDayOfTheWeek(){
-
-
-
+      }
   
+  else{
+  
+    alert("Please Enter valid date details ");
 }
+
 
 
 
