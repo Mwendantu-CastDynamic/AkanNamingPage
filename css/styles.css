@@ -35,6 +35,12 @@ width: 100%;
 
 }
 
+#kenteMeaning{
+
+  text-align: center;
+}
+
+
 #fPImage{
   
   width:97%;
@@ -60,7 +66,7 @@ height:600px;
 .col2-3{
 
   width:50%;
-  height:600px;
+  height:800px;
   
 
 }
@@ -93,4 +99,13 @@ height:600px;
   font-family: fantasy;
   float:right;
   
+}
+
+#culturalExplorationSection{
+
+width:80%;
+margin-left:7%;
+margin-right: 3%;
+height:600px;
+
 }

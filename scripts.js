@@ -117,7 +117,7 @@ console.log(dayOfTheWeek); //for the birthday 10/03/83 the day of the week is Th
 // Therefore if the index position of my dayOfTheWeek is 5 it then follows 
 // that my AKAN days of the week index 0 should begin on Saturday. 
 
-// Re-arranging our dayOfTheWeek order
+// Re-arranging our dayOfTheWeek order:
 
 dayOfTheWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   
