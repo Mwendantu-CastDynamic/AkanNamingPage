@@ -15,7 +15,7 @@ let akanForm = document.getElementById('akan-form')
 // The maleNames and femaleNames in the array are in an indexed order 
 // which corresponds to the day of the week designation for each name.
 
-const daysOfTheWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+let dayOfTheWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
 const femaleNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
 
@@ -47,7 +47,9 @@ const maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
 // Default gender refers to the option button pre-selected
 // before the user configures it to his options
 
-  let defaultGender = akanForm.elements['gender'];
+  let defaultGender = [""]
+  
+  defaultGender = akanForm.elements['gender'];
 
   // Since we require characters within the year month and day input which 
   // we shall later parse into integers, we shall therefore initialize
@@ -69,30 +71,61 @@ const maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
 
   let centuryDigits = yearInput.splice(0,1);
 
+     let cc = centuryDigits
+
   let yearDigits = yearInput.splice(2,3);
 
-  let monthDigits = monthInput.splice(0,1);
+    let yy = yearDigits
 
-  let dayDigits = dayInput.splice(0,1);
+  let monthDigits = monthInput;
 
+    mm = monthDigits
 
+  let dayDigits = dayInput;
+
+    dd = dayDigits
+
+  //According to the formula 
+  // Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
+
+ //where;
+
+ // CC - is the century digits. For example 1989 has CC = 19
+
+// YY - is the Year digits (1989 has YY = 89)
+
+ // MM -  is the Month
+
+ // DD - is the Day of the month 
+
+ // mod - is the modulus function ( % 
+  
   
   // We then designate dayOfTheWeek as a variable of a function 
   // within which we shall apply the specified akan formula, 
   // to be used to compute the day of the week
 
+  
+  var dayOfTheWeek = parseInt(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) %7
+  )
+console.log(dayOfTheWeek); //for the birthday 10/03/83 the day of the week is Thursday
 
-  let dayOfTheWeek = function() = > {
 
+// Business Logic
+// According to my AKAN my date of birth 10/03/1983  which falls on a Thursday
+// is the day of the week at position 5 of my dayOfTheWeek array.
+// Therefore if the index position of my dayOfTheWeek is 5 it then follows 
+// that my AKAN days of the week index 0 should begin on Saturday. 
 
+// Re-arranging our dayOfTheWeek order
 
-
-  };
+dayOfTheWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  
 
 alert(defaultGender);
 
 function getGenderSelected(){
-  if(defaultGender ==== )
+  if(defaultGender == )
 }
 
 
