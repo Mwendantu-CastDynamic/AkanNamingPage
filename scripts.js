@@ -22,55 +22,93 @@ const femaleNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
 const maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
 
 
-// Retrieve date of birth input using THE DOM Elements
+// Declare and initialize variables to be used to retrieve the form element 
+// input data through the DOM
+// We shall therefore initialize each of these Input variable as a string array
+// inorder to hold the form input control's data as a String type Array in our variables 
+// as follows:
 
-let name = "";
+  let usersName = [""];
+
+   usersName = akanForm.elements['usersName'];
+
+  let birthYear = [""]; 
+
+    birthYear = akanForm.elements['birthYear'];
+
+  let birthMonth = [""];
+
+   birthMonth = akanForm.elements['birthMonth'];
   
+  let birthDay = [""];
+
+   birthDay = akanForm.elements['birthDay'];
   
-  let defaultGender = 
+// Default gender refers to the option button pre-selected
+// before the user configures it to his options
 
-  // Since we require sections of the year
-  let yearInput = []
-  let month = 
-  let  = 
+  let defaultGender = akanForm.elements['gender'];
 
-  let dayOfTheWeek = "";
+  // Since we require characters within the year month and day input which 
+  // we shall later parse into integers, we shall therefore initialize
+  // each of these Input variable as a string array as follows:
+
+  let yearInput = parseInt(birthYear);
+
+  // We also declare the month Input variable as a string array:
+
+  let monthInput = parseInt(birthMonth);
+
+  // Finally we declare the date Input variable as a string array:
+
+  let dayInput = parseInt(birthDay);
+
+
+//  Next we declare all the variables required to enable us obtain the specific values required 
+//  in the Akan formula to determine the day of the week:
+
+  let centuryDigits = yearInput.splice(0,1);
+
+  let yearDigits = yearInput.splice(2,3);
+
+  let monthDigits = monthInput.splice(0,1);
+
+  let dayDigits = dayInput.splice(0,1);
+
+
+  
+  // We then designate dayOfTheWeek as a variable of a function 
+  // within which we shall apply the specified akan formula, 
+  // to be used to compute the day of the week
+
+
+  let dayOfTheWeek = function() = > {
+
+
+
+
+  };
 
 alert(defaultGender);
 
 function getGenderSelected(){
-  if(DefaultGender ==== )
+  if(defaultGender ==== )
 }
 
 
 
 // Application Logic
 
-if opt -female
 
 function getFemaleAkanNames(){
-  if( )
-// Application Logic
-
-if opt-male
+  
+}
 
 function getFemaleAkanNames(){
-  if( )
+}
 
 
- // Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
-
- /* where;
  
-  CC - is the century digits. For example 1989 has CC = 19
- 
-  YY - is the Year digits (1989 has YY = 89)
- 
-  MM -  is the Month
- 
-  DD - is the Day of the month 
- 
-  mod - is the modulus function ( % ) */
 
 function getDayOfTheWeek(){
 
