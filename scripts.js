@@ -22,13 +22,25 @@ const femaleNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
 const maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
 
 
+// Retrieve date of birth input using THE DOM Elements
 
-// Begin by accessing the specific form we wish to prevent default submit
+let name = "";
+  
+  
+  let defaultGender = 
 
-// Retrieve date of birth input using the query selector function
+  // Since we require sections of the year
+  let yearInput = []
+  let month = 
+  let  = 
 
+  let dayOfTheWeek = "";
 
+alert(defaultGender);
 
+function getGenderSelected(){
+  if(DefaultGender ==== )
+}
 
 
 
