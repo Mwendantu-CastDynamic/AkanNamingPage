@@ -111,7 +111,7 @@ console.log(dayOfWeekIndexValue); //for the birthday 10/03/83 the day of the wee
 
 
 // Business Logic
-// According to my AKAN my date of birth 10/03/1983  which falls on a Thursday
+// According to my AKAN my date of birth  which falls on a Thursday
 // is the day of the week at position 5 of my dayOfTheWeek array.
 // Therefore if the index position of my dayOfTheWeek is 5 it then follows 
 // that my AKAN days of the week index 0 should begin on Saturday. 
@@ -132,17 +132,17 @@ var dayOfWeekIndexValue = parseInt(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+
 
 
 
-getAkanNames(dayOfWeekIndexValue){
+
 
 
   function getAkanNames(dayOfWeekIndexValue){
 
-     if(defaultGender == "female") {
+     if(defaultGender === "female") {
   
         alert( "The Akan name for "+ usersName ,"is " + femaleNames[dayOfWeekIndexValue])
     }
   
-    else if (defaultGender != "female"){
+    else if (defaultGender !== "female"){
     
     
       alert( "The Akan name for "+ usersName ,"is " + maleNames[dayOfWeekIndexValue])
@@ -155,9 +155,10 @@ getAkanNames(dayOfWeekIndexValue){
       alert("Please Enter Valid Details As Required ");
   }
   
-  
+  }
 
-}
+  getAkanNames(dayOfWeekIndexValue)
+
 
 akanForm.addEventListener('submit', event=>{
 
