@@ -28,21 +28,30 @@ let maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
 // inorder to hold the form input control's data as a String type Array in our variables 
 // as follows:
 
-  let usersName = [""];
+  let  usersName = [""];
 
-   usersName = akanForm.elements['usersName'];
+       usersName = akanForm.elements['usersName'];
 
-  let birthYear = [""]; 
+  let  usersNameError = akanForm.elements['usersNameError'];
 
-    birthYear = akanForm.elements['birthYear'];
+  let  birthYear = [""]; 
+
+       birthYear = akanForm.elements['birthYear'];
+
+  let  birthYearError = akanForm.elements['birthYearError'];
 
   let birthMonth = [""];
 
    birthMonth = akanForm.elements['birthMonth'];
+
+   let birthMonthError = akanForm.elements['birthMonthError'];
   
   let birthDay = [""];
 
    birthDay = akanForm.elements['birthDay'];
+
+   let birthDayError = akanForm.elements['birthDayError'];
+   
   
 // Default gender refers to the option button pre-selected
 // before the user configures it to his options
@@ -92,7 +101,7 @@ let maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
 
  // CC - is the century digits. For example 1989 has CC = 19
 
-// YY - is the Year digits (1989 has YY = 89)
+ // YY - is the Year digits (1989 has YY = 89)
 
  // MM -  is the Month
 
@@ -127,7 +136,7 @@ let maleNames = ['Kwame','Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi'];
 
 alert(defaultGender);
 
-var dayOfWeekIndexValue = parseInt(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) %7
+let dayOfWeekIndexValue = parseInt(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) %7
 );
 
 
