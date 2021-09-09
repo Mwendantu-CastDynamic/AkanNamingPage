@@ -106,9 +106,8 @@ let maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
   // to be used to compute the day of the week
 
   
-  var dayOfTheWeekIndex = parseInt(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) %7
-  )
-console.log(dayOfTheWeekIndex); //for the birthday 10/03/83 the day of the week is Thursday
+ 
+console.log(dayOfWeekIndexValue); //for the birthday 10/03/83 the day of the week is Thursday
 
 
 // Business Logic
@@ -123,92 +122,42 @@ dayOfTheWeek = ['Saturday','Sunday','Monday','Tuesday','Wednesday','Thursday','F
  
 let femaleNames = ['Ama','Akosua','Adwoa','Abenaa','Akua','Yaa','Afua'];
 
-let maleNames = ['Kwame','Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi',];
+let maleNames = ['Kwame','Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi'];
 
 
 alert(defaultGender);
 
-function getAkanNames(){
-  if(defaultGender == "female") {
-
-    if (dayOfTheWeek =dayOfTheWeek[0]) {
-      alert( "The Akan name for "+ usersName ,"is " + femaleNames[0])
-  }
-
-  else if (dayOfTheWeek =dayOfTheWeek[1]) {
-    alert( "The Akan name for "+ usersName ,"is " + femaleNames[1])
-
-  }
-  else if (dayOfTheWeek =dayOfTheWeek[2]) {
-    alert( "The Akan name for "+ usersName ,"is " + femaleNames[2])
+var dayOfWeekIndexValue = parseInt(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) %7
+);
 
 
-  }
-  else if (dayOfTheWeek =dayOfTheWeek[3]) {
-    alert( "The Akan name for "+ usersName ,"is " + femaleNames[3])
+
+getAkanNames(dayOfWeekIndexValue){
 
 
-  }
-  else if (dayOfTheWeek =dayOfTheWeek[4]) {
-    alert( "The Akan name for "+ usersName ,"is " + femaleNames[4])
+  function getAkanNames(dayOfWeekIndexValue){
 
-
-  }
-  else if (dayOfTheWeek =dayOfTheWeek[5]) {
-    alert( "The Akan name for "+ usersName ,"is " + femaleNames[5])
-
-
-  }
-  else if (dayOfTheWeek =dayOfTheWeek[6]) {
-    alert( "The Akan name for "+ usersName ,"is " + femaleNames[6])
-
-
-  }
-
-}    
-
-  if (defaultGender != "female") {
-      
-    if (dayOfTheWeek =dayOfTheWeek[0]) {
-      alert( "The Akan name for "+ usersName ,"is " + maleNames[0])
-
-      }
-
-      else if (dayOfTheWeek =dayOfTheWeek[1]) {
-        alert( "The Akan name for "+ usersName ,"is " + maleNames[1])
-
-      }
-      else if (dayOfTheWeek =dayOfTheWeek[2]) {
-        alert( "The Akan name for "+ usersName ,"is " + maleNames[2])
-
-      }
-      else if (dayOfTheWeek =dayOfTheWeek[3]) {
-        alert( "The Akan name for "+ usersName ,"is " + maleNames[3])
-
-      }
-      else if (dayOfTheWeek =dayOfTheWeek[4]) {
-        alert( "The Akan name for "+ usersName ,"is " + maleNames[4])
-
-      }
-      else if (dayOfTheWeek =dayOfTheWeek[5]) {
-        alert( "The Akan name for "+ usersName ,"is " + maleNames[5])
-
-      }
-      else if (dayOfTheWeek =dayOfTheWeek[6]) {
-        alert( "The Akan name for "+ usersName ,"is " + maleNames[6])
-
-      }
-
- 
-      }
+     if(defaultGender == "female") {
   
-  else{
+        alert( "The Akan name for "+ usersName ,"is " + femaleNames[dayOfWeekIndexValue])
+    }
   
-    alert("Please Enter valid date details ");
+    else if (defaultGender != "female"){
+    
+    
+      alert( "The Akan name for "+ usersName ,"is " + maleNames[dayOfWeekIndexValue])
+  
+     }
+        
+    
+    else{
+    
+      alert("Please Enter Valid Details As Required ");
+  }
+  
+  
+
 }
-
-
-
 
 akanForm.addEventListener('submit', event=>{
 
