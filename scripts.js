@@ -34,8 +34,14 @@ let maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
 
   let  usersName = [""];
 
-       usersName = (akanForm.elements['usersName']).toString()
+        usersName = akanForm.elements['usersName']
 
+      if((usersName.length >=2 && usersName.length <=12)){
+
+       usersName = usersName.toString()
+
+      }
+        else{
 
   let  usersNameError = document.getElementById('usersNameError');
 
@@ -45,38 +51,69 @@ let maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
 
         usersName.style.borderColor = 'red';
 
+        usersName.clear();
+
         usersName.focus();
+
+        };
 
   let  birthYear = [""]; 
 
+      birthYear = akanForm.elements['birthYear'];
+
+      if((birthYear.value >= 1900 && birthYear.value <= 2100) && 
+         (birthYear.length = 4)){
+
        birthYear = (akanForm.elements['birthYear']).toString();
+
+         }
+
+     else{
 
   let  birthYearError = document.getElementById('birthYearError');
   
-       birthYearError.textContent = 'error: Invalid Year Entry!';
+   birthYearError.textContent = 'error: Invalid Year Entry!';
       
-       birthYearError.style.color = 'red';
+   birthYearError.style.color = 'red';
 
-       birthYear.style.borderColor = 'red';
+   birthYear.style.borderColor = 'red';
 
-       birthYear.focus();
+   birthYear.clear()
 
-  let birthMonth = [""];
+   birthYear.focus();
 
-   birthMonth = (akanForm.elements['birthMonth']).toString();
+  };
+
+let birthMonth = [""];
+
+  birthMonth = akanForm.elements['birthMonth'];
+
+
+  if(birthMonth.value >= 1 && birthMonth.value <=12){
+
+    birthMonth = (akanForm.elements['birthMonth']).toString();
+
+  }
+
+  else{
 
     let birthMonthError = document.getElementById('birthMonthError');
 
-    birthMonthError.textContent = 'error: Invalid Month Entry!' ;
+    //birthMonthError.textContent = 'error: Invalid Month Entry!' ;
 
-    birthMonth.style.color = 'red';
+    //birthMonth.style.color = 'red';
 
-    birthMonth.style.borderColor = 'red';
+    //birthMonth.style.borderColor = 'red';
 
-    birthMonth.focus();
+    //birthMonth.focus();
 
+  } 
   
    let birthDay = [""];
+
+   birthDay = akanForm.elements['birthDay'];
+
+   if (birthDay.value >= 1 && birthDay.value >=31 ){
 
    birthDay = (akanForm.elements['birthDay']).toString();
 
@@ -84,18 +121,21 @@ let maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
 
    birthDayError.textContent = 'error: Invalid Day Entry!';
 
-   birthDayError.style.color = 'red';
+  birthDayError.style.color = 'red';
   
-   birthDay.style.borderColor = 'red';
+ birthDay.style.borderColor = 'red';
 
-   birthDay.focus()
+ birthDay.focus()
 
-// Default gender refers to the option button pre-selected
-// before the user configures it to his options
+  }
+
+
+// Default gender refers to the option button pre-selected before the user re-selects
+// it to set their options and as such doesnt require error-checking.
 
   let defaultGender = [""];
   
-  defaultGender = (akanForm.elements.value('defaultGender')).toString();
+  defaultGender = (akanForm.elements['defaultGender'].toString());
 
   // Since we require characters within the year month and day input which 
   // we shall later parse into integers, we shall therefore initialize
@@ -198,7 +238,7 @@ let dayOfWeekIndexValue = parseInt(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+
     
     else{
     
-      alert("Please Enter Valid Details As Required ");
+      akanForm.clear();
   }
   
   }
@@ -219,4 +259,3 @@ akanForm.addEventListener('submit', event=>{
 
 
 
-}
