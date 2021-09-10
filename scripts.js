@@ -28,37 +28,74 @@ let maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame'];
 // inorder to hold the form input control's data as a String type Array in our variables 
 // as follows:
 
+//(NB. For us to be able to link to a document element to be used to access and display
+//    invalid input error messages we shall apply the DOM's document object's .getElementById()
+//    method to the space adjacent to each applicable input control using a span. )
+
   let  usersName = [""];
 
-       usersName = akanForm.elements['usersName'];
+       usersName = (akanForm.elements['usersName']).toString()
 
-  let  usersNameError = akanForm.elements['usersNameError'];
+
+  let  usersNameError = document.getElementById('usersNameError');
+
+        usersNameError.textContent ='error: Invalid Name Entry!';
+
+        usersNameError.style.color = 'red';
+
+        usersName.style.borderColor = 'red';
+
+        usersName.focus();
 
   let  birthYear = [""]; 
 
-       birthYear = akanForm.elements['birthYear'];
+       birthYear = (akanForm.elements['birthYear']).toString();
 
-  let  birthYearError = akanForm.elements['birthYearError'];
+  let  birthYearError = document.getElementById('birthYearError');
+  
+       birthYearError.textContent = 'error: Invalid Year Entry!';
+      
+       birthYearError.style.color = 'red';
+
+       birthYear.style.borderColor = 'red';
+
+       birthYear.focus();
 
   let birthMonth = [""];
 
-   birthMonth = akanForm.elements['birthMonth'];
+   birthMonth = (akanForm.elements['birthMonth']).toString();
 
-   let birthMonthError = akanForm.elements['birthMonthError'];
+    let birthMonthError = document.getElementById('birthMonthError');
+
+    birthMonthError.textContent = 'error: Invalid Month Entry!' ;
+
+    birthMonth.style.color = 'red';
+
+    birthMonth.style.borderColor = 'red';
+
+    birthMonth.focus();
+
   
-  let birthDay = [""];
+   let birthDay = [""];
 
-   birthDay = akanForm.elements['birthDay'];
+   birthDay = (akanForm.elements['birthDay']).toString();
 
-   let birthDayError = akanForm.elements['birthDayError'];
-   
+   let birthDayError = document.getElementById('birthDayError');
+
+   birthDayError.textContent = 'error: Invalid Day Entry!';
+
+   birthDayError.style.color = 'red';
   
+   birthDay.style.borderColor = 'red';
+
+   birthDay.focus()
+
 // Default gender refers to the option button pre-selected
 // before the user configures it to his options
 
-  let defaultGender = [""]
+  let defaultGender = [""];
   
-  defaultGender = akanForm.elements['gender'];
+  defaultGender = (akanForm.elements.value('defaultGender')).toString();
 
   // Since we require characters within the year month and day input which 
   // we shall later parse into integers, we shall therefore initialize

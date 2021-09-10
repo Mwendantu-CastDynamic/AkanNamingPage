@@ -52,27 +52,27 @@
       </p>
       <p>
       <label for="usersName">Fill in Your Name/Alias:</label>  
-      <input type="text" name="usersName" placeholder="-FirstName--LastName-">
+      <input id="usersName" type="text" name="usersName" placeholder="-FirstName--LastName-">
       <span id="usersNameError"></span>
       </p>
       <p>
       <label for="birthYear">Indicate your <em>Year of Birth</em>:</label>
-      <input id="dobInput" type="text" name="birthYear" placeholder="YYYY">
+      <input id="birthYear" type="number" name="birthYear" placeholder="YYYY">
       <span id="birthYearError"></span>
       </p>
       <p>
       <label for="birthMonth"><em>Birth Month</em>:</label>
-      <input type="text" name="birthMonth" placeholder="MM">
+      <input id="birthMonth" type="number" name="birthMonth" placeholder="MM">
       <span id="birthMonthError"></span>
       </p>
       <p>
       <label for="birthDay"><em>Day of Month</em>:</label>
-      <input type="text" name="birthDay" placeholder="DD">
+      <input id="birthDay" type="number" name="birthDay" placeholder="DD">
       <span id="birthDayError"></span>
       </p>
       <p id="gender">
       <label for="gender">Select Your Gender:</label>
-      <input id="genderFemaleDefault" type="radio" name="gender" value="female" checked="checked"><strong>Female</strong>
+      <input id="defaultGender" type="radio" name="gender" value="female" checked="checked"><strong>Female</strong>
       <input type="radio" name="gender" value= "male"><strong>Male</strong>
       </p>
       <p id="submit-button">
